@@ -1,20 +1,20 @@
 ---
 import Logo from '../components/Logo.astro';
 
-const navItems = [
-    { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' }
-];
+// const navItems = [
+//     { linkText: 'Home', href: '/' },
+//     { linkText: 'Revalidation', href: '/revalidation' },
+//     { linkText: 'Image CDN', href: '/image-cdn' },
+//     { linkText: 'Edge Function', href: '/edge' },
+//     { linkText: 'Blobs', href: '/blobs' }
+// ];
 ---
 
-<nav class="flex flex-wrap items-center gap-4 pt-6 pb-16 sm:pt-12 sm:pb-24">
-    <a href="/">
-        <Logo />
-    </a>
-    {
+<nav class="flex flex-wrap items-center gap-4 pb-6 pt-16 sm:pb-12 sm:pt-24">
+    <h2><a href="/">
+        bones.dev
+    </a></h2>
+    <!-- {
         !!navItems?.length && (
             <ul class="flex flex-wrap gap-x-4 gap-y-1">
                 {navItems.map((item) => (
@@ -26,5 +26,5 @@ const navItems = [
                 ))}
             </ul>
         )
-    }
+    } -->
 </nav>
